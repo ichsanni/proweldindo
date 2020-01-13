@@ -1,0 +1,189 @@
+<!--
+to-do lists:
+pg. 1
+1. carousel 'about us'
+2. 'why us' little animation
+3. 'our services' slides
+4. clickable img to 'our products'
+5. clickable img to 'contact us' *
+6. footer *
+pg. 2
+1. 'our products'
+2. clickable img to 'contact us'*
+3. footer *
+pg. 3
+1. 'contact us' forms
+2. footer *
+-->
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <link rel=stylesheet href="style.css">
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+    
+    <title>PT. PROWELDINDO - General Trading and Industrial Service</title>
+    
+    <!-- LOGO + NAVBAR -->
+    <nav class="navbar navbar-expand-sm bg-light pos-f-t" id="navbar">
+    <div class="container header collapse navbar-collapse" id=navbarSupportedContent>
+        <div id="logo">placement logo</div>
+        <div id="navbarToggleMobile">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item aktif">
+                    <a class="nav-link" href="home_page.html"><h5>Home</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product_page.html"><h5>Our Products</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact_page.html"><h5>Contact Us</h5></a>
+                </li>
+            </ul>
+    </div></div>
+    </nav>
+    
+    <!-- CAROUSEL ABOUT US -->
+    
+    <div class=carousel-ab>
+    <div id="carouselHeroImage" class="container carousel slide" data-ride="carousel" data-interval="3000" data-wrap="true">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselHeroImage" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselHeroImage" data-slide-to="1"></li>
+            <li data-target="#carouselHeroImage" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                placeholder 1 img class="d-block w-100"
+            </div>
+            <div class="carousel-item">
+                placeholder 2 img class="d-block w-100"
+            </div>
+            <div class="carousel-item">
+                placeholder 3 img class="d-block w-100"
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <!-- ICONS WHY US -->
+    <div class="container whyus">
+        <div class=title>
+    <h2>"PROWELDINDO is a company specialized in providing engineering service on Pulp and Paper Industry in Indonesia."</h2></div>
+        
+    <div class="reason">
+        <h5 class="reason-text font-italic">More than 10+ years in the field</h5>
+        <div class="place-icon">placeholder icon</div>
+        <div class="reason-desc">Proweldindo was established in 2007 with the objective of providing specialized engineering service to Pulp and Paper Industry and other General Industry in Indonesia.</div>
+    </div>
+    <div class="reason">
+        <h5 class="reason-text font-italic">Experienced crews</h5>
+        <div class="place-icon">placeholder icon</div>
+        <div class="reason-desc">Proweldindo is registered with most of the local companies and government established in Indonesia, particularly in the Pulp and Paper Industry, Power Plant and other General Industries.</div>
+    </div>
+        <div class="reason">
+        <h5 class="reason-text font-italic">Professionals in every projects</h5>
+        <div class="place-icon">placeholder icon</div>
+        <div class="reason-desc">Proweldindo represented a selected number of remarkable manufacturers and establishments specialized in providing various supply of materials and equipment, technical expertise and training.</div>
+    </div>
+    </div>
+    
+    <!-- CAROUSEL SERVICES -->
+    <div class="container carousel-ser">
+        <div class="title" id="t-ser">
+        <h2>Our services including:</h2>
+        </div>
+    <div id="carousel-services" class="container carousel slide" data-ride="carousel" data-interval="3500" data-wrap="true">
+        <ol class="carousel-indicators" id="services">
+            <li data-target="#carousel-services" data-slide-to="0" class="active"><span class="inside" style="width: 50%; height: 50%; align-content: center; align-items: center;">Gearbox Recondition</span></li>
+            <li data-target="#carousel-services" data-slide-to="1"><span class="inside">Heavy-duty Parts Recondition</span></li>
+            <li data-target="#carousel-services" data-slide-to="2"><span class="inside">Line Boring</span></li>
+            <li data-target="#carousel-services" data-slide-to="3"><span class="inside">Roll Service</span></li>
+            <li data-target="#carousel-services" data-slide-to="4"><span class="inside">On-line Sealing Leakage</span></li>
+            <li data-target="#carousel-services" data-slide-to="5"><span class="inside">Wearguard Epoxy Recondition</span></li>
+        </ol>
+        <div class="carousel-inner" >
+            <div class="carousel-item ser active">
+                <div class="ser-details">
+                <h2>Gearbox Recondition</h2>
+                    <br>
+                <p>Fabricate the new gears with Forged material and Heat Treated surface, Rebuild bearing seats, Measurement, Trouble shooter and Running test.</p>
+                </div>
+            </div>
+            <div class="carousel-item ser">
+                <div class="ser-details">
+                <h2>Heavy-duty Parts Recondition</h2>
+                    <br>
+                <p>such as Disc Chipper, HP Feeder, Reclaimer screw etc.</p>
+                </div>
+            </div>
+            <div class="carousel-item ser">
+                <div class="ser-details">
+                <h2>Line Boring</h2>
+                    <br>
+                </div>
+            </div>
+            <div class="carousel-item ser">
+                <div class="ser-details">
+                <h2>Roll Services</h2>
+                    <br>
+                <p>Thermal Spray HVOF, Arc Spray, Roll recover, Dynamic Balancing, Grinding, Polishing, Spreader Roll Refurbishment, Suction Roll/CCR/Swimming Roll refurbishment.</p>
+                </div>
+            </div>
+            <div class="carousel-item ser">
+                <div class="ser-details">
+                <h2>On-line Sealing Leakage</h2>
+                    <br>
+                </div>
+            </div>
+            <div class="carousel-item ser">
+                placeholder 6 img class="d-block w-100"
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <!-- OUR PRODUCTS -->
+    <div class="container hp-products">
+    <div class="title" id="t-pr">
+    <h4>Trusted by manufacturers worldwide to sell and maintain their products. </h4>
+    <div class="manufact-logo"></div>
+    <div class="product-link">
+        <h5>Click here to see our full list of products  >></h5>    
+    </div>
+    </div>
+    
+    </div>
+    
+    <!-- FOOTER -->
+    <div style="width:100%; background: #BBB;">
+    <footer class="container col-sm-10 footer-container">
+    <div class="col-sm-4 footer" id="office">
+        2019 <br>
+    
+        PT. Proweldindo<br>
+        Jl. Mertilang Raya JE 7 / 15<br>
+        Bintaro Sektor 9<br>
+        Tangerang 15229<br>
+        Indonesia<br>
+        Phone : +62 21 2221 1596<br>
+        Fax : +62 21 745 8139<br>
+        Mobile : +62 881 1830 310<br>
+        Email : info@proweldindo.com<br>
+
+        </div>
+        <div class="col-sm-4 footer" id="workshop">
+        WORKSHOP<br>
+        Jl. Raya Pangkalan - Karawang km 10 - Desa Wanajaya, Kec. Teluk Jambe Barat. Jawa Barat<br>
+        Phone : +62 267 474 8008<br>
+        Fax : +62 267 474 8048<br></div>
+        <div class="col-sm-4 footer">
+        
+        </div>
+    </footer>
+    </div>
+    
+    <script>
+   </script>
+</html>
