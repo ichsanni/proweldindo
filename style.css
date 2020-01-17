@@ -22,11 +22,14 @@
     .reason{
         width: auto !important;
         display: block !important;
-
+        height: auto !important;
     }
     .reason-text{
         display: block !important;
-        padding-right: 0 !important;
+        padding: 10px 0!important;
+    }
+    .reason-desc {
+        margin-bottom: 15px !important;
     }
     .place-icon {
         display: block !important;
@@ -108,6 +111,7 @@ body {
     top: 0px;
     position: sticky;
     z-index: 99;
+    background: #FFF;
 }
 #logo {
     margin-right: auto;
@@ -149,8 +153,21 @@ li a{
 
 .carousel-ab {
     height: 450px;
-    text-align: center;
     background: #800;
+}
+.text-hero {
+    z-index: 2 !important;
+    position: absolute;
+    width: auto;
+    height: 30%;
+    top: 35%;
+    background: rgba(136, 0, 0, 0.8);
+    color: #FFF;
+}
+.img-hero {
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .whyus {
@@ -164,7 +181,6 @@ li a{
     position: static;
     display: inline-table;
     padding: 20px;
-    border: 0px solid #800;
     background: #FFF;
     -webkit-box-shadow: 15px 15px 20px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 15px 15px 20px 0px rgba(0,0,0,0.5);
@@ -249,6 +265,7 @@ li a{
     margin: 30px;
     width: 40%;
     padding-top: 25px;
+    display: inline-block;
 }
 
 .title{
@@ -258,6 +275,12 @@ li a{
 }
 #t-ser {
     color: #800;
+}
+.img-ser {
+    top: 5%;
+    position: absolute;
+    height: 90%;
+    display:  inline-block;
 }
 
 .hp-products {
@@ -300,22 +323,10 @@ li a{
     width: 100%;
     height: 400px;
     position: relative;
+    overflow: hidden;
 }
 .divider {
     background: #999;
-}
-.hero-title{
-    display: inline-block;
-    height: 100%;
-    -ms-transform: translateY(50%);
-    transform: translateY(50%);
-    position: relative;
-    color: #800;
-}
-.hero-img{
-    display: inline-block;
-    height: 100%;
-    color: #FFF;
 }
 
 .products{
