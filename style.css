@@ -2,6 +2,17 @@
 @import "bootstrap-4.3.1-dist/css/bootstrap-grid.css";
 @import "bootstrap-4.3.1-dist/css/bootstrap-reboot.css";
 
+@font-face {
+    font-family: 'roboto_slab';
+    src: url('font/robotoslab-variablefont_wght-webfont.eot');
+    src: url('font/robotoslab-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/robotoslab-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/robotoslab-variablefont_wght-webfont.woff') format('woff'),
+         url('font/robotoslab-variablefont_wght-webfont.svg#roboto_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @media only screen and (max-width: 576px){
     ul.navbar-nav {
@@ -47,7 +58,21 @@
     .ser-details {
         margin: 10px 0 !important;
         width: 100% !important;
-        padding-top: 0 !important;
+        padding: 10px !important;
+        display: block !important;
+        z-index: 2;
+        position: absolute;
+    }
+    .img-cont {
+        display: block !important;
+        height: 100% !important;
+        width: 100% !important;
+        position: absolute !important;
+    }
+    .img-ser {
+        object-fit: cover !important;
+        z-index: 1;
+        opacity: 0.5;
     }
     .product-title {
         overflow: auto !important;
@@ -87,7 +112,20 @@
     .form-new {
         width: 100% !important;
     }
-    
+    .carousel-indicators#services li{
+        width: 15% !important;
+        height: 15% !important;
+    }
+    .img-hero {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+    .text-hero {
+        width: 100% !important;
+        height: auto !important;
+        top: 50% !important;
+    }
 }
 @media only screen and (max-width: 768px){
     .reason {
@@ -100,6 +138,9 @@
 /* END OF RESPONSIVENESS */
 body {
     background: #EEE;
+}
+h1, .title {
+    font-family: serif;
 }
 
 .header {
@@ -167,7 +208,11 @@ li a{
 .img-hero {
     position: relative;
     width: 100%;
-    height: auto;
+    object-fit: fill;
+}
+
+.m-20 {
+    margin: 20px;
 }
 
 .whyus {
@@ -200,10 +245,13 @@ li a{
     margin-top: 10px;
 }
 
+#carousel-services {
+    height: auto;
+}
 .carousel-ser {
     width: 100%;
-    margin-top: 2%;
-    height: 600px;
+    margin-top: 1%;
+    height: auto;
     padding-top: 15px;
     display: block;
     z-index: 0;
@@ -276,12 +324,17 @@ li a{
 #t-ser {
     color: #800;
 }
-.img-ser {
-    top: 5%;
+.img-cont {
+    display: inline-block;
+    width: 55%;
+    height: 100%;
     position: absolute;
-    height: 90%;
-    display:  inline-block;
 }
+.img-ser {
+    object-fit: contain;
+    height: 100%;
+}
+
 
 .hp-products {
     border-radius: 1em;
@@ -305,6 +358,10 @@ li a{
     text-align: end;
 }
 
+.bg {
+    width: 100%;
+    background: #003663;
+}
 .footer-container{
     margin-top: 5%;
     padding: 3%;
@@ -312,7 +369,7 @@ li a{
 }
 .footer{
     display: inline-table;
-    color: #555;
+    color: #EEE;
     font-size: 0.8rem;
     position: relative;
 }
