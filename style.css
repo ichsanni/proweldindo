@@ -60,11 +60,11 @@
         width: 100% !important;
     }
     .shadow-right {
-        box-shadow: 1em 0em 2em 2em rgba(0, 54, 99, 1) !important;
+        box-shadow: 1em 0em 2em 2em rgb(36,78,107) !important;
         transform: skew(0deg) !important;
     }
     .shadow-left {
-        box-shadow: -1em 0em 2em 2em rgba(0, 54, 99, 1) !important;
+        box-shadow: -1em 0em 2em 2em rgb(36,78,107) !important;
         transform: skew(0deg) !important;
     }
     .new-reason-text {
@@ -79,6 +79,13 @@
     #workshop::before {
         content: "\A";
         white-space: pre;
+    }
+    .new-reason {
+        background: rgb(36,78,107) !important;
+        background: -moz-linear-gradient(0deg, rgba(36,78,107,1) 80%, rgba(132,205,219,1) 100%) !important;
+        background: -webkit-linear-gradient(0deg, rgba(36,78,107,1) 80%, rgba(132,205,219,1) 100%) !important;
+        background: linear-gradient(0deg, rgba(36,78,107,1) 80%, rgba(132,205,219,1) 100%) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#244e6b",endColorstr="#84cddb",GradientType=1) !important;
     }
     .ser-details {
         margin: 10px 0 !important;
