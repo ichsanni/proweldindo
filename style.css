@@ -163,7 +163,7 @@
 /* END OF RESPONSIVENESS */
 /* START OF AWESOMENESS */
 body {
-    background: rgba(240, 245, 255, 1); /* #F4FAFF */
+    background: rgba(250, 245, 255, 1); /* #F4FAFF */
 }
 h1, .title {
     font-family: serif;
@@ -178,7 +178,7 @@ h1, .title {
     top: 0px;
     position: sticky;
     z-index: 99;
-    background: rgba(245, 245, 255, 1);
+    background: rgba(250, 245, 255, 1);
 }
 #logo {
     margin-right: auto;
@@ -285,10 +285,13 @@ li a{
     width: 100%;
     display: block;
     height: 60%;
-    background-color: rgba(0, 54, 99, 1);
+    background: rgb(36,78,107);
+    background: -moz-radial-gradient(circle, rgba(36,78,107,1) 0%, rgba(65,125,159,1) 55%, rgba(132,205,219,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(36,78,107,1) 0%, rgba(65,125,159,1) 55%, rgba(132,205,219,1) 100%);
+    background: radial-gradient(circle, rgba(36,78,107,1) 0%, rgba(65,125,159,1) 55%, rgba(132,205,219,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#244e6b",endColorstr="#84cddb",GradientType=1);
     overflow: hidden;
     margin: 30px 0px;
-    border-bottom: 5px solid rgba(0, 54, 99 ,1);
 }
 .new-img {
     float: right;
@@ -302,12 +305,12 @@ li a{
     float: right;
 }
 .shadow-right {
-    box-shadow: 5em 0em 5em 5em rgba(0, 54, 99, 1);
+    box-shadow: 5em 0em 5em 5em rgb(36,78,107);
 
     transform: skew(-10deg);
 }
 .shadow-left {
-    box-shadow: -5em 0em 5em 5em rgba(0, 54, 99, 1);
+    box-shadow: -5em 0em 5em 5em rgb(36,78,107);
     
     transform: skew(-10deg);
 }
@@ -400,7 +403,11 @@ li a{
 }
 .ser {
     color: #FFF;
-    background: #800;
+    background: rgb(136,34,34);
+    background: -moz-linear-gradient(90deg, rgba(136,34,34,1) 0%, rgba(187,51,34,0.7539390756302521) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(136,34,34,1) 0%, rgba(187,51,34,0.7539390756302521) 100%);
+    background: linear-gradient(90deg, rgba(136,34,34,1) 0%, rgba(187,51,34,0.7539390756302521) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#882222",endColorstr="#bb3322",GradientType=1);
     position: static;
     height: 70%;
     width: 100%;
@@ -461,7 +468,8 @@ h5:hover {
 
 .bg {
     width: 100%;
-    background: #003663; /* rgba(0, 54, 99, 1) */
+    background: rgb(36,78,107);
+    /* background: #003663; /* rgba(0, 54, 99, 1) */
 }
 .footer-container{
     margin-top: 5%;
