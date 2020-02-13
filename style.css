@@ -14,7 +14,7 @@
 
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 768px){
     ul.navbar-nav {
         width: 100% !important;
     }
@@ -68,10 +68,9 @@
         transform: skew(0deg) !important;
     }
     .new-reason-text {
-        font-size: 0.8em !important;
+        font-size: 1em !important;
         transform: skew(0deg) !important;
-        margin-top: 15% !important;
-        font-style: oblique;
+        margin-top: 5% !important;
     }
     .carousel-indicators#services {
         justify-content: start !important;
@@ -105,6 +104,16 @@
         object-fit: cover !important;
         z-index: 1;
         opacity: 0.5;
+    }
+    .product-ex {
+        display: block !important;
+        width: 90% !important;
+        text-align: center;
+        margin: 5% !important;
+    }
+    .hp-products {
+        font-size: 1em !important;
+        text-align: center !important;
     }
     .product-title {
         overflow: auto !important;
@@ -158,13 +167,6 @@
         height: auto !important;
         top: 50% !important;
     }
-}
-@media only screen and (max-width: 768px){
-    .reason {
-        margin: 3.5% !important;
-        padding: 5px !important;
-    }
-    
 }
 
 /* END OF RESPONSIVENESS */
@@ -292,13 +294,15 @@ li a{
     width: 100%;
     display: block;
     height: 60%;
+    overflow: hidden;
+    margin: 30px 0px;
+}
+.blue {
     background: rgb(36,78,107);
     background: -moz-radial-gradient(circle, rgba(36,78,107,1) 0%, rgba(65,125,159,1) 55%, rgba(132,205,219,1) 100%);
     background: -webkit-radial-gradient(circle, rgba(36,78,107,1) 0%, rgba(65,125,159,1) 55%, rgba(132,205,219,1) 100%);
     background: radial-gradient(circle, rgba(36,78,107,1) 0%, rgba(65,125,159,1) 55%, rgba(132,205,219,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#244e6b",endColorstr="#84cddb",GradientType=1);
-    overflow: hidden;
-    margin: 30px 0px;
 }
 .new-img {
     float: right;
@@ -408,13 +412,15 @@ li a{
 .h2-ser{
     color: #800;
 }
-.ser {
-    color: #FFF;
+.red {
     background: rgb(136,34,34);
     background: -moz-linear-gradient(90deg, rgba(136,34,34,1) 0%, rgba(187,51,34,0.7539390756302521) 100%);
     background: -webkit-linear-gradient(90deg, rgba(136,34,34,1) 0%, rgba(187,51,34,0.7539390756302521) 100%);
     background: linear-gradient(90deg, rgba(136,34,34,1) 0%, rgba(187,51,34,0.7539390756302521) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#882222",endColorstr="#bb3322",GradientType=1);
+}
+.ser {
+    color: #FFF;
     position: static;
     height: 70%;
     width: 100%;
@@ -452,24 +458,38 @@ li a{
     border-radius: 1em;
     border: 0.5px solid #800;
     margin-top: 7%;
+    font-size: 1.2em;
 }
 #t-pr {
     text-align: center;
 }
-.manufact-logo {
-    height: 80px;
-    background: #999;
+.product-ex {
+    display: inline-block;
+    width: 30%;
+    border: 1px solid #999;
+    height: 40%;
+    margin: 2% 1% 1%;
+    background: rgb(255,255,255);
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(76,0,0,0.5);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(76,0,0,0.5);
+    box-shadow: 10px 10px 20px 0px rgba(76,0,0,0.5);
 }
-.product-link h5{
-    background: #800;
+.product-img-ex {
+    height: 60%;
+    width: 90%;
+    margin: 5% 5% 10%;
+    background: #999;
+    display: block;
+}
+.product-link {
+    text-align: end;
+    margin: 1%;
+    padding: 15px;
+    color: #FFF;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
-    color: #FFF;
-    font-weight: 100;
-    padding: 10px;
-    text-align: end;
 }
-h5:hover {
+a:hover {
     text-decoration: none !important;
 }
 
@@ -513,7 +533,6 @@ h5:hover {
 }
 .product-title{
     position: relative;
-    background: #800;
     cursor: pointer;
     display: block;
     height: 60px;

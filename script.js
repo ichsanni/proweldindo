@@ -27,5 +27,6 @@ $(function () {
     $('.product-title').click(function(){
        var clickedId = $(this).attr('id');
         $('#' + clickedId + ' + div.product-cont').slideToggle("slow");
+        $(this).toggleClass('opened');
     });
 });
