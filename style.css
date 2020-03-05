@@ -115,7 +115,7 @@
         text-align: center;
         margin: 5% !important;
     }
-    .hp-products {
+    .gmaps {
         font-size: 1em !important;
         text-align: center !important;
     }
@@ -126,14 +126,16 @@
     .product-title::after {
         content: '+';
         position: absolute !important;
-        transform: translate(350%, 0%) !important;
+        float: right !important;
+        transform: translate(350%, 0%);
     }
     .manufacturer {
-        transform: translate(40%, 0%) !important;
         overflow: auto !important;
         word-wrap: break-word !important;
         font-size: 1.2rem !important;
         width: 70% !important;
+        transform: translate(35%, 0%) !important;
+        
     }
     #t-pr {
         text-align: left !important;
@@ -176,7 +178,7 @@
 /* END OF RESPONSIVENESS */
 /* START OF AWESOMENESS */
 body {
-    background: rgba(250, 245, 255, 1); /* #F4FAFF */
+    background: rgba(255, 255, 255, 1);
 }
 h1, .title {
     font-family: serif;
@@ -297,7 +299,7 @@ li a{
 .new-reason {
     width: 100%;
     display: block;
-    height: 60%;
+    height: 340px;
     overflow: hidden;
     margin: 30px 0px;
 }
@@ -335,13 +337,13 @@ li a{
 .new-reason-desc {
     z-index: 9;
     display: inline-table;
-    color: #FFF;
     padding: 3%;
     width: 45%;
     height: 100%;
-    padding-top: 10%;
+    padding-top: 7%;
 }
 .new-reason-text {
+    color: rgba(255, 255, 255, 0);
     position: relative;
     line-height: 2;
     display: block;
@@ -440,6 +442,12 @@ li a{
     padding-top: 25px;
     display: inline-block;
 }
+p.small {
+    position: absolute;
+    transform: translateY(90%);
+    top: 90%;
+    color: rgba(200, 200, 200, 1);
+}
 
 .title{
     width: 100%;
@@ -456,49 +464,49 @@ li a{
     width: 65%;
     height: 100%;
     position: absolute;
+    overflow: visible;
 }
 .img-ser {
     object-fit: cover;
+    position: static;
+}
+.ser-3 {
+    height: 32%;
+    margin: 0.3%;
+}
+.ser-2 {
+    height: 48%;
+    margin: 0.5%;
+}
+.ser-1 {
     height: 100%;
 }
 
+.vert-ser-3 {
+    width: 32%;
+    height: 100%;
+    margin: 0.1%;
+}
+.vert-ser-2 {
+    width: 48%;
+    height: 100%;
+    margin: 0.3%;
+}
+.hovering {
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: 9 !important;
+    box-shadow: -20px 0px 10px rgba(136, 0, 0, 0.3);
+}
 
-.hp-products {
+.gmaps {
     border-radius: 1em;
     border: 0.5px solid #800;
     margin-top: 7%;
     font-size: 1.2em;
-}
-#t-pr {
-    text-align: center;
-}
-.product-ex {
-    display: inline-block;
-    width: 30%;
-    height: 40%;
-    margin: 2% 1% 1%;
-    background: rgb(255,255,255);
-    -webkit-box-shadow: 10px 10px 20px 0px rgba(76,0,0,0.5);
-    -moz-box-shadow: 10px 10px 20px 0px rgba(76,0,0,0.5);
-    box-shadow: 10px 10px 20px 0px rgba(76,0,0,0.5);
-}
-.product-img-ex {
-    height: 60%;
-    width: 90%;
-    margin: 5% 5% 10%;
-    background: #999;
     display: block;
-}
-.product-link {
-    text-align: end;
-    margin: 1%;
-    padding: 15px;
-    color: #FFF;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
-}
-a:hover {
-    text-decoration: none !important;
+    position: relative;
 }
 
 .bg {
@@ -506,6 +514,7 @@ a:hover {
     background: rgb(36,78,107);
     /* background: #003663; /* rgba(0, 54, 99, 1) */
 }
+
 .footer-container{
     margin-top: 5%;
     padding: 3%;
@@ -547,23 +556,33 @@ a:hover {
 }
 .product-logo{
     display: inline-block;
-    background: #999;
-    height: 60px;
-    width: 25%;
-    z-index: 0;
-    margin-left: 1%;
+    height: 100%;
+    width: 20%;
+    margin-left: 2%;
     position: absolute;
+    float: right;
+    overflow: hidden;
+    object-fit: fill;
+    z-index: 1;
+    padding: 5px;
+}
+.product-logo img {
+    width: 100%;
+    height: 100%;
 }
 .manufacturer { 
     display: inline-block;
     position: relative;
     font-size: 1.3rem;
     width: 95%;
-    transform: translate(30%, 50%);
+    float: left;
+    z-index: 1;
+    transform: translate(25%, 50%);
 }
 .product-title::after {
     display: inline-block;
     position: absolute;
+    float: right;
     content: '+';
     font-size: 2rem;
 }
@@ -633,4 +652,23 @@ a:hover {
 }
 label {
     font-weight: bold;
+}
+
+/* ANIMATION */
+.display-slides {
+    animation: .4s ease-out 1 slide_up;
+    color: rgba(255, 255, 255, 1);
+}
+
+@keyframes slide_up {
+    from {
+        margin-top: 20%;
+        color: rgba(255, 255, 255, 0.2);
+        display: none;
+    }
+    to {
+        margin-top: 0;
+        color: rgba(255, 255, 255, 1);
+        display: block;
+    }
 }
