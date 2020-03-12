@@ -193,7 +193,7 @@ h1, .title {
     top: 0px;
     position: sticky;
     z-index: 99;
-    background: rgba(250, 245, 255, 1);
+    background: rgba(255, 255, 255, 1);
 }
 #logo {
     margin-right: auto;
