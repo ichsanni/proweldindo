@@ -203,6 +203,9 @@ h1, .title {
     background: #999;
     text-align: center;
 }
+#logo img {
+    max-width: 100%;
+}
 
 li a:hover {
     color: #FFF;
