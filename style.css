@@ -91,9 +91,8 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#244e6b",endColorstr="#84cddb",GradientType=1) !important;
     }
     .ser-details {
-        margin: 10px 0 !important;
+        margin: 5px 0 !important;
         width: 100% !important;
-        padding: 10px !important;
         display: block !important;
         z-index: 2;
         position: absolute;
@@ -101,8 +100,9 @@
     .img-cont {
         display: block !important;
         height: 100% !important;
-        width: 100% !important;
+        width: 95% !important;
         position: absolute !important;
+        pointer-events: none !important;
     }
     .img-ser {
         object-fit: cover !important;
@@ -160,7 +160,7 @@
         width: 100% !important;
     }
     .carousel-indicators#services li{
-        width: 15% !important;
+        width: 14% !important;
         height: 15% !important;
     }
     .img-hero {
@@ -179,9 +179,6 @@
 /* START OF AWESOMENESS */
 body {
     background: rgba(255, 255, 255, 1);
-}
-h1, .title {
-    font-family: serif;
 }
 
 .header {
@@ -247,10 +244,11 @@ li a{
     width: 100%;
     height: auto;
     top: 35%;
-    background: rgba(80, 0, 0, 0.8);
+    /*background: rgba(80, 0, 0, 0); */
     color: #FFF;
 }
 .img-hero {
+    opacity: 0.7;
     position: relative;
     width: 100%;
     height: 100%;
@@ -369,7 +367,6 @@ li a{
     width: 100%;
     margin-top: 1%;
     height: auto;
-    padding-top: 15px;
     display: block;
     z-index: 0;
     position: static;
@@ -387,41 +384,41 @@ li a{
   position: static;
   flex: 0 1 auto;
   -ms-flex: 0 1 auto;
-  margin-top: 2%;
+  margin-top: 1%;
   z-index: 1;
 }
 .carousel-indicators#services li{
   opacity: 0.5;
   width: 160px;
-  height: 70px;
+  height: auto;
   flex: none;
   margin-right: 5px;
   margin-left: 5px;
   cursor: pointer;
-  background: rgba(253, 253, 253, 1);
-  color: #008;
+  background: rgba(253, 253, 253, 0);
+  color: #FFF;
   opacity: 1;
   transition: opacity 0.6s ease;
-  border-radius: 1em;
+  border-radius: 0em;
   text-indent: 0;
   box-sizing: border-box;
   background-clip: border-box;
   text-align: center;
-  padding: inherit;
+  padding: 0px;
   font-weight: bold;
 }
 .carousel-indicators#services .active{
   opacity: 1;
   width: 160px;
-  height: 70px;
-  border-radius: 1em;
+  height: auto;
+  border-radius: 0em;
   background: #FFF;
   color: #800;
-  border: 5px solid #800;   
+  border: 0px solid #800;   
   -webkit-box-shadow: 10px 10px 10px 0px rgba(76,0,0,0.5);
   -moz-box-shadow: 10px 10px 10px 0px rgba(76,0,0,0.5);
   box-shadow: 10px 10px 10px 0px rgba(76,0,0,0.5);
-  z-index: 2;
+  padding: 0px;
 }
 .h2-ser{
     color: #800;
@@ -602,7 +599,7 @@ p.small {
     width: 90%;
     background: rgba(255,255,255,0);
     color: #000;
-    padding: 20px 0px;
+    padding: 10px 0px;
     border-bottom: 3px solid #A33;
 }
 .show {
