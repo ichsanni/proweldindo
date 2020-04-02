@@ -66,13 +66,13 @@ $(function () {
         
     });
     }
-    
+    /*
     //Expanding animation when clicking the product title
     $('.product-title').click(function(){
        var clickedId = $(this).attr('id');
         $('#' + clickedId + ' + div.product-cont').slideToggle("slow");
         $(this).toggleClass('opened');
-    });
+    });*/
     
     //Make the picture on "our service" bigger when hovered
     $('.w-100.img-ser').hover(
