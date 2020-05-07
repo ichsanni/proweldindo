@@ -133,6 +133,7 @@
     .product-list {
         display: block !important;
         width: 100% !important;
+        margin: 20px 0% !important;
     }
     #t-pr {
         text-align: left !important;
@@ -506,7 +507,7 @@ p.small {
 .product-list{
     position: relative;
     color: #FFF;
-    margin: 20px 2%;
+    margin: 20px;
     padding-top: 0px;
     display: inline-grid;
     width: 45%;
