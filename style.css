@@ -242,7 +242,7 @@ li a{
 
 .carousel-ab {
     height: 80%;
-    background: #800;
+    background: rgba(136, 0, 0, 1);
 }
 .text-hero {
     z-index: 2 !important;
@@ -251,7 +251,6 @@ li a{
     width: 100%;
     height: auto;
     top: 35%;
-    /*background: rgba(80, 0, 0, 0); */
     color: #FFF;
 }
 .img-hero {
@@ -491,14 +490,14 @@ p.small {
 
 /* PRODUCT PAGE */
 .hero {
-    background: #800;
+    background: rgba(136, 0, 0, 1);
     width: 100%;
     height: 70%;
     position: relative;
     overflow: hidden;
 }
 .divider {
-    background: #999;
+    background: rgba(136, 0, 0, 1);
 }
 
 .products{
