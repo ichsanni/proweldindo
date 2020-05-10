@@ -599,15 +599,15 @@ video.shizoka-vid {
     margin-top: 20px;
     padding: 20px;
 }
-.form-group img {
-    margin: 10px 0 10px;
-}
 .cap {
     width: auto;
     font-size: 1.2em;
 }
 label {
     font-weight: bold;
+}
+form, input {
+	width: inherit;
 }
 
 /* ANIMATION */

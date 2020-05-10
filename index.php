@@ -1,0 +1,186 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <link rel=stylesheet href="style.css?v=2.2">
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+    
+    <title>PT. PROWELDINDO - General Trading and Industrial Service</title>
+    
+    <!-- LOGO + NAVBAR -->
+    <nav class="navbar navbar-expand-sm pos-f-t" id="navbar">
+    <div class="container header collapse navbar-collapse" id=navbarSupportedContent>
+        <div id="logo"><img src="logos/logo-horizontal.jpg" /></div>
+        <div id="navbarToggleMobile">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item aktif">
+                    <a class="nav-link" href="https://www.proweldindo.com/"><h5>Home</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.proweldindo.com/products"><h5>Our Products</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.proweldindo.com/contact"><h5>Contact Us</h5></a>
+                </li>
+            </ul>
+    </div></div>
+    </nav>
+    
+    <!-- CAROUSEL ABOUT US -->
+    
+    <div class=carousel-ab>
+    <div id="carouselHeroImage" class="carousel slide" data-ride="carousel" data-interval="5000" data-wrap="true" data-pause="hover">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselHeroImage" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselHeroImage" data-slide-to="1"></li>
+            <li data-target="#carouselHeroImage" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block img-hero" src="img/insitu6.jpg"/>
+                <div class="text-hero">
+                    <h2 class="m-20">PT Proweldindo</h2>
+                <p class="m-20">We are an 100% Indonesian Company based in Jakarta, Indonesia.</p></div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-hero" src="img/team3.png"/>
+                <div class="text-hero">
+                    <h2 class="m-20">Our Mission</h2>
+                <p class="m-20">To be the leader in maintenance of machinery in the paper and pulp industry.</p></div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-hero" src="img/balancing.jpg"/>
+                <div class="text-hero">
+                    <h2 class="m-20">Our Products</h2>
+                <p class="m-20">Proweldindo acts as the agent for SX Roller, PW Shizuoka DOCTORING SYSTEM, Ichikawa, Dienes, Exwill Conveyor, MVS, and Loctite.</p></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <!-- ICONS WHY US -->
+    <div class="new-whyus">
+    <div class="title"><h2>PROWELDINDO is a company specialized in providing engineering service on Pulp and Paper Industry in Indonesia.</h2></div>
+    
+    <div class="gray">
+    <div class="new-reason gray">
+    <div class="new-reason-desc shadow-right left"><div class="new-reason-text" id="res1">Proweldindo is registered with most of the local companies and government established in Indonesia, particularly in the Pulp and Paper Industry, Power Plant and other General Industries.</div></div>
+    <div class="new-img right"><img class="reason-img" src="img/packing.jpg"></div>
+    </div>
+        
+    <div class="new-reason gray">
+    <div class="new-reason-desc shadow-left right"><div class="new-reason-text" id="res2">Proweldindo was established in 2007 to provide specialized engineering service to Pulp and Paper Industry and other General Industry in Indonesia.</div></div>
+    <div class="new-img left"><img class="reason-img" src="img/team1.jpg"></div>
+    </div> 
+        
+    <div class="new-reason gray">
+    <div class="new-reason-desc shadow-right left"><div class="new-reason-text" id="res3">Proweldindo represented a selected number of remarkable manufacturers specialized in providing various supply of materials and equipment, technical expertise and training.</div></div>
+    <div class="new-img right"><img class="reason-img" src="img/training.jpg"></div>
+    </div>
+    </div>
+    <div class="container" style="border-bottom: 3px solid rgb(55, 55, 55); margin-top: 30px;"></div>
+    </div>
+    
+    <!-- CAROUSEL SERVICES -->
+    <div class="carousel-ser">
+        <div class="title" id="t-ser">
+        <h2>Our services</h2>
+        </div>
+    <div id="carousel-services" class="carousel slide red" data-ride="carousel" data-interval="3000" data-wrap="true" data-pause="hover">
+        <ol class="carousel-indicators" id="services">
+            <li data-target="#carousel-services" data-slide-to="0" class="active"><span class="inside">Gearbox <br>Recondition</span></li>
+            <li data-target="#carousel-services" data-slide-to="1"><span class="inside">Heavy-duty Parts Recondition</span></li>
+            <li data-target="#carousel-services" data-slide-to="2"><span class="inside">Hard<br> Facing</span></li>
+            <li data-target="#carousel-services" data-slide-to="3"><span class="inside">Roll<br> Service</span></li>
+            <li data-target="#carousel-services" data-slide-to="4"><span class="inside">In-situ <br>Mechanical</span></li>
+            <li data-target="#carousel-services" data-slide-to="5"><span class="inside">Wearguard Epoxy Recondition</span></li>
+            </ol>
+            
+        <div class="container carousel-inner" >
+            <div class="carousel-item ser active">
+                <div class="ser-details">
+                <h2>Gearbox Recondition</h2>
+                    <br>
+                <p>Fabricate the new gears with Forged material and Heat Treatment surface, Rebuild bearing seats, Measurement, Trouble shooter and Running test.</p>
+                    
+                </div>
+                <div class="img-cont">
+                    <img class="img-ser vert-ser-3" src="img/gearbox1.jpeg">
+                    <img class="img-ser vert-ser-3" src="img/gearbox2.jpeg">
+                    <img class="img-ser vert-ser-3" src="img/gearbox3.jpeg">
+                </div>
+            </div>
+            <div class="carousel-item ser">
+                <div class="ser-details">
+                <h2>Heavy-duty Parts Recondition</h2>
+                    <br>
+                <p>such as Disc Chipper, HP Feeder, Reclaimer screw etc.</p>
+                
+                </div>
+                <div class="img-cont">
+                    <img class="img-ser vert-ser-2" src="img/heavy-duty1.jpg">
+                    <img class="img-ser vert-ser-2" src="img/heavy-duty2.jpg">
+                </div>
+            </div>
+            <div class="carousel-item ser">
+                <div class="ser-details">
+                <h2>Hard Facing</h2>
+                    <br>
+                <p>Material additions by welding to prolong its' lifetime. ArcSpray / Thermal Spray coating the welding materials, Spray/coat hardened the worn-out or damaged material.</p>  
+                </div>
+                <div class="img-cont">
+                    <img class="d-block w-100 img-ser ser-2" src="img/hard-facing2.jpg">
+                    <img class="d-block w-100 img-ser ser-2" src="img/hard-facing1.jpg">
+            </div>
+            </div>
+            <div class="carousel-item ser">
+                <div class="ser-details">
+                <h2>Roll Services</h2>
+                    <br>
+                <p>Thermal Spray HVOF, Arc Spray, Roll recover, Dynamic Balancing, Grinding, Polishing, Spreader Roll Refurbishment, Suction Roll/CCR/Swimming Roll refurbishment.</p>
+                    
+                <p class="small">You can hover on the picture.</p>
+                </div>
+                <div class="img-cont">
+	               <img  class="d-block w-100 img-ser ser-2" src="img/roll2.jpg">
+	               <img  class="d-block w-100 img-ser ser-2" src="img/roll3.jpg">
+	           </div>
+            </div>
+            <div class="carousel-item ser">
+                <div class="ser-details">
+                <h2>In-situ Mechanical Process</h2>
+                    <br>
+		          <p>On-the-spot repairing or reconditioning process. </p> 
+                <p class="small">You can hover on the picture.</p>
+                </div>
+                <div class="img-cont">
+                    <img class="d-block w-100 img-ser ser-2" src="img/insitu2.jpg">
+                    <img class="d-block w-100 img-ser ser-2" src="img/insitu4.jpg">
+                </div>
+            </div>
+            <div class="carousel-item ser">
+		        <div class="ser-details">
+		          
+                <img src="logos/loctite.jpeg" width="100px" height="100px"/>
+                <h2>Wearguard Epoxy Recondition</h2>
+                    <br>
+                <p>Recondition for PUMPS, CYCLONE, SCREW,TANKS etc.</p>
+                
+                
+                <p class="small">You can hover on the picture.</p>
+                </div>
+                <div class="img-cont">
+                    <img class="d-block w-100 img-ser ser-3" src="img/epoxy-recondition1.jpeg">
+                    <img class="d-block w-100 img-ser ser-3" src="img/epoxy-recondition2.jpg">
+                    <img class="d-block w-100 img-ser ser-3" src="img/epoxy-recondition3.jpg">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+        
+</html>
+
+<?php include ('footer.php'); ?>
