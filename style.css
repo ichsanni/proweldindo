@@ -526,7 +526,7 @@ p.small {
     width: 20%;
     margin-left: 2%;
     position: absolute;
-    float: right;
+    float: left;
     overflow: hidden;
     object-fit: fill;
     z-index: 1;
