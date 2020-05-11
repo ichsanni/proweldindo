@@ -546,7 +546,7 @@ video.shizoka-vid {
 }
 .manufacturer { 
     display: inline-block;
-    position: relative;
+    position: absolute;
     font-size: 1.3rem;
     width: 95%;
     float: left;
