@@ -526,7 +526,6 @@ p.small {
     width: 20%;
     margin-left: 2%;
     position: relative;
-    float: left;
     overflow: hidden;
     object-fit: fill;
     z-index: 1;
@@ -549,8 +548,7 @@ video.shizoka-vid {
     position: absolute;
     font-size: 1.3rem;
     width: 95%;
-    float: left;
-    z-index: 1;
+	z-index: 1;
     transform: translate(25%, 50%);
 }
 .product-cont {
